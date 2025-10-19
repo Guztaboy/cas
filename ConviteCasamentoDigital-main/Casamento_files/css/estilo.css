@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+
+#div_topo{
+	background-position: 50% 50%; 
+	background-size: contain; 
+	background-repeat: no-repeat; 
+	background-image: url("../img/noivos.png"); 
+	visibility: visible; 
+	transform: translate3d(0px, 0.0600037px, 0px);
+	min-height: 40vh;
+
+}
+
+@media screen and (max-width: 600px) {
+ 	#div_topo{
+		min-height: 45vh;
+	}
+}
+
+
+@media screen and (min-width: 600px) {
+ 	#div_topo{
+		min-height: 70vh;
+	}
+}
+
+.div_80{
+	height: 80%;
+}
+
+.div_20{
+	height: 20%;
+}
+
+
+.botao_redondo {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border: none;
+  box-shadow: 0 1px 5px rgba(107,114,255,.4);
+  font-size: 24px;
+  color: #232323;
+    
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+
+}
+
+.botao_principal{
+  width: 65px;
+  height: 65px;
+
+  border-radius: 50%;
+  /*background-color: #6b72ff ;*/
+  z-index: 20;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+ 	.botao_principal{
+  		width: 65px;
+  		height: 65px;
+   		font-size: 10px;
+
+  	}
+}
+
+
+@media screen and (min-width: 600px) {
+ 	.botao_principal{
+		width: 100px;
+  		height: 100px;
+  		font-size: 15px;
+
+	}
+}
+.icone{
+    font-size: 15px;
+
+}
+
+.sessao_diamante{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 70vh; 
+	background-repeat: no-repeat; 
+	background-image: url("../img/diamante.png");
+	opacity: 0.1;
+
+}
+
+.fundo_azul{
+	background-color: rgba(188,238,255, 0.3);
+}
+
+.cor_azul{
+	color: #4b4d4f;
+}
+
+.imagem_icone{
+	width: 35%;
+	height: 35%;
+}
+
+
+.fab{
+  position: fixed;
+  bottom:10px;
+  right:10px;
+  z-index: 10;
+}
+
+.fab button{
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #6b72ff;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  font-size: 24px;
+  color: white;
+    
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.fab button.main{
+    border: none;
+
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #6b72ff;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+.fab button.main:before{
+  content: '^';
+}
+
+
+
+
+
+.fonte{
+  font-family: 'Dongle', sans-serif;
+  font-size: 30px;
+}
+
+
+.fonte_rodape{
+font-family: 'Murray Hill', sans-serif;
+font-family: 'MurrayHill Bd BT', sans-serif;
+
+}
+
+@media screen and (max-width: 600px) {
+  .fonte_rodape{
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .fonte_rodape{
+    font-size: 30px;
+  }
+}
+
+/* Contador: forçar itens para preto */
+#countdown2-9,
+.countdown2 {
+  color: #000;
+}
+
+.countdown2 .number,
+#countdown2-9 .number,
+.countdown2 .number-wrap .number,
+#countdown2-9 .number-wrap .number,
+.countdown2 .period,
+#countdown2-9 .period,
+.countdown2 .dot,
+#countdown2-9 .dot,
+.countdown2 .event-date,
+#countdown2-9 .event-date,
+.countdown2 .event-date h5,
+#countdown2-9 .event-date h5 {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+/* Se quiser também o fundo transparente/clareado para contraste */
+.countdown2 .countdown-cont,
+#countdown2-9 .countdown-cont {
+  background: transparent;
+}
+
+/* Degradê global de fundo */
+html, body {
+  background: linear-gradient(180deg, #f7fbfd 0%, #e9f3fb 40%, #d7ecf8 100%);
+  min-height: 100%;
+}
+
+/* manter seções com fundo próprio (ajuste conforme necessário) */
+section {
+  background: transparent;
+}
+
+/* Aplica degradê e estilo similar ao do contador para a seção header1-h */
+#header1-h {
+  background: transparent;
+}
+
+#header1-h .container {
+  background: linear-gradient(135deg, #ffffff 0%, #e6f3fb 40%, #d0e6f6 100%);
+  border-radius: 12px;
+  padding: 28px 24px;
+  box-shadow: 0 8px 24px rgba(22,71,106,0.12);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  position: relative;
+  z-index: 1;
+}
+
+/* força texto preto para garantir contraste (override de .mbr-white) */
+#header1-h .mbr-white,
+#header1-h .mbr-section-title,
+#header1-h h1 {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+  #header1-h .container {
+    padding: 18px 12px;
+    border-radius: 10px;
+  }
+}
+
+/* === GLOBAL: suavizar junções entre sections (faixas superior/inferior com desfoque) ===
+   - Para excluir uma section, adicione a classe .no-smooth
+     ex: <section class="..." id="foo" class="no-smooth"> ... </section>
+*/
+section:not(.no-smooth) {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+/* garante que o conteúdo da section fique acima das faixas */
+section:not(.no-smooth) > .container {
+  position: relative;
+  z-index: 3; /* aumentar para sobrepor as faixas (que agora são z-index:0) */
+}
+
+/* faixas superior/inferior com blur para "mascarar" a borda entre sections */
+section:not(.no-smooth)::before,
+section:not(.no-smooth)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 64px;                     /* ajuste a altura se precisar */
+  pointer-events: none;             /* não bloqueia clique/scroll */
+  z-index: 0; /* antes estava 2 — agora fica atrás do conteúdo da section */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: opacity .35s ease, transform .35s ease;
+  /* gradiente que vai de cor sólida translúcida para transparente — disfarça a junção */
+  background: linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0) 100%);
+  mix-blend-mode: normal;
+  will-change: opacity, transform;
+}
+
+/* superior (posicionada um pouco para fora para cobrir totalmente a junção) */
+section:not(.no-smooth)::before {
+  top: -8px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+/* inferior — gradiente invertido */
+section:not(.no-smooth)::after {
+  bottom: -8px;
+  transform: rotate(180deg);
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+/* adaptações para seções com fundo claro/escuro */
+@media (prefers-color-scheme: dark) {
+  section:not(.no-smooth)::before,
+  section:not(.no-smooth)::after {
+    background: linear-gradient(180deg, rgba(10,10,10,0.75) 0%, rgba(10,10,10,0) 100%);
+  }
+}
+
+/* reduzir intensidade em telas pequenas */
+@media (max-width: 600px) {
+  section:not(.no-smooth)::before,
+  section:not(.no-smooth)::after {
+    height: 40px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+  section:not(.no-smooth)::before,
+  section:not(.no-smooth)::after {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+/* Exceção para elementos que usam overlays/iframes e não devem ser mascarados:
+   adicione .no-smooth no markup para pular este efeito */
+
+/* Permitir rolagem do fundo enquanto o modal está aberto */
+body.modal-open {
+  overflow: visible !important;    /* permite scroll da página */
+  position: static !important;     /* evita comportamento inesperado em alguns navegadores */
+}
+
+/* Backdrop não bloqueia scroll (mas mantém aparência) */
+.modal-backdrop {
+  z-index: 12000 !important;
+  pointer-events: none !important; /* deixa o scroll e interações passarem para a página */
+  background: rgba(0,0,0,0.45) !important; /* mantém máscara visual */
+}
+
+/* Modal em si permanece acima e interativo */
+.modal {
+  z-index: 12100 !important;
+  pointer-events: auto !important;
+  position: fixed; /* mantém o modal visível na viewport enquanto o usuário rola */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Conteúdo do modal rolável e imagens não cortadas */
+.modal-dialog {
+  max-width: 92vw;
+  margin: 1.5rem auto;
+}
+.modal-content {
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+}
+.modal-body img,
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Reduzir tamanho do QR code no modal */
+.modal-body img.image,
+.modal-body .image,
+.modal-content img.image {
+  width: 320px;        /* largura fixa em desktop (ajuste se precisar) */
+  max-width: 85%;      /* responsivo para telas menores */
+  height: auto;
+  display: block;
+  margin: 12px auto;
+  box-shadow: none;    /* opcional: remover sombra se existir */
+}
+
+/* Tamanhos menores em telas pequenas */
+@media (max-width: 600px) {
+  .modal-body img.image,
+  .modal-body .image {
+    width: 220px;
+    max-width: 70%;
+  }
+}
+
+/* Garantir que sections/overlays fiquem atrás enquanto modal aberto */
+.modal-open section::before,
+.modal-open section::after,
+.modal-open section > .container {
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Footer: tornar a section completamente branca e sem efeitos de "card" */
+section#footer6-k {
+  background: #ffffff !important;     /* fundo branco */
+  color: #000 !important;             /* texto escuro */
+  box-shadow: none !important;
+  position: relative;
+  overflow: visible;
+}
+
+/* Remover faixas pseudo (::before/::after) que podem adicionar gradientes/desfoques */
+section#footer6-k::before,
+section#footer6-k::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Se o estilo global aplica "card" no > .container, anulamos aqui para footer */
+section#footer6-k > .container {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  color: inherit;
+}
+
+/* Garantir que o texto do rodapé fique escuro e centralizado conforme markup */
+section#footer6-k .mbr-white,
+section#footer6-k .fonte_rodape,
+section#footer6-k p {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+/* Se quiser que o footer ocupe toda a largura sem padding extra, ajuste abaixo */
+/* section#footer6-k > .container { padding-left:0; padding-right:0; } */
+
+.btn-secondary {
+  background-color: #6c757d !important; /* cinza */
+  color: #ffffff !important;
+  border-color: #6c757d !important;
+  box-shadow: none !important;
+  transition: background-color .18s ease, transform .12s ease;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #5a6367 !important;
+  border-color: #51585b !important;
+  color: #fff !important;
+  transform: translateY(-1px);
+}
+
+.btn-secondary:active {
+  background-color: #4a5255 !important;
+  border-color: #43494b !important;
+}
+
+/* Garantir estilo para o footer do modal (especificidade) */
+.modal-footer .btn-secondary {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+  color: #fff !important;
+}
+
+/* Estender degradê do topo para baixo até o nome (ajuste height conforme necessário) */
+section#header11-1 {
+  position: relative;
+  overflow: visible;
+}
+
+/* overlay degradê que desce mais (fica entre a imagem de fundo e o conteúdo) */
+section#header11-1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 420px; /* aumenta para cobrir até o nome; ajuste para mais/menos */
+  pointer-events: none;
+  z-index: 2; /* abaixo do conteúdo (container tem z-index >=3) */
+  background: linear-gradient(
+    100deg,
+    rgba(230,243,251,1) 0%,
+    rgba(208,230,246,0.85) 45%,
+    rgba(208,230,246,0.5) 70%,
+    rgba(255,255,255,0) 100%
+  );
+  transition: opacity .35s ease;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+/* garante que o conteúdo da section fique acima do overlay */
+section#header11-1 > .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* em telas pequenas usar altura menor */
+@media (max-width: 800px) {
+  section#header11-1::before {
+    height: 300px;
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+  }
+}
+
+/* Corrige overlay que estava desfocando a imagem hero */
+section#header11-1 {
+  position: relative;
+  overflow: visible;
+}
+
+/* remover qualquer backdrop-filter/blur que afetava a imagem */
+section#header11-1::before {
+  content: "" !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 420px; /* ajuste se quiser que o degradê desça mais/menos */
+  pointer-events: none;
+  z-index: 1; /* fica atrás do conteúdo */
+  background: linear-gradient(
+    110deg,
+    rgba(230,243,251,0.95) 0%,
+    rgba(230,243,251,0.55) 50%,
+    rgba(255,255,255,0) 100%
+  ) !important;
+  /* forçar remoção de blur aplicado anteriormente */
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* garantir que a imagem e o conteúdo fiquem acima do overlay e sem blur */
+section#header11-1 .mbr-figure,
+section#header11-1 .mbr-figure img,
+section#header11-1 .mbr-fullscreen,
+section#header11-1 > .container,
+section#header11-1 .media-container-column {
+  position: relative;
+  z-index: 5 !important;
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* caso alguma regra antiga ainda aplique blur, anula explicitamente */
+section#header11-1 * {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+/* Remover barra/branco no topo do hero e forçar o degradê a começar no topo */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* esconder quaisquer pseudo‑faixas que sobraram */
+section#header11-1::before,
+section#header11-1::after,
+section:first-of-type::before,
+section:first-of-type::after {
+  display: none !important;
+  content: none !important;
+  height: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* garantir que o section hero fique colado ao topo */
+section#header11-1 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  position: relative !important;
+  background: transparent !important;
+  overflow: visible !important;
+}
+
+/* remover borda/arredondamento/sombra do container do hero */
+section#header11-1 > .container,
+section:first-of-type > .container {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  background-clip: padding-box !important;
+  z-index: 3 !important;
+}
+
+/* zera possíveis contornos aplicados por outras regras à primeira .container da página */
+body > .container:first-child,
+body > header,
+.mbr-navbar,
+.navbar {
+  box-shadow: none !important;
+  border: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* segurança: removendo borda por transparência caso haja overlay branco */
+section#header11-1 * {
+  outline: none !important;
+  border-top: none !important;
+}
